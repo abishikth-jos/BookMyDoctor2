@@ -24,6 +24,7 @@ A web-based appointment scheduling system that allows users to book appointments
 
 ## Directory Structure
 ```
+Directory structure:
 └── harshmaniar1804-bookmydoctor/
     ├── README.md
     ├── admin/
@@ -41,72 +42,97 @@ A web-based appointment scheduling system that allows users to book appointments
     │       ├── App.jsx
     │       ├── index.css
     │       ├── main.jsx
+    │       ├── assets/
+    │       │   └── assets.js
     │       ├── components/
     │       │   ├── Navbar.jsx
-    │       │   ├── Sidebar.jsx
-    │       ├── pages/
-    │           ├── Dashboard.jsx
-    │           ├── AddDoctor.jsx
-    │           ├── DoctorsList.jsx
-    │           ├── AllAppointments.jsx
+    │       │   └── Sidebar.jsx
+    │       ├── context/
+    │       │   ├── AdminContext.jsx
+    │       │   ├── AppContext.jsx
+    │       │   └── DoctorContext.jsx
+    │       └── pages/
+    │           ├── Login.jsx
+    │           ├── Admin/
+    │           │   ├── AddDoctor.jsx
+    │           │   ├── AllAppointments.jsx
+    │           │   ├── Dashboard.jsx
+    │           │   └── DoctorsList.jsx
+    │           └── Doctor/
+    │               ├── DoctorAppointments.jsx
+    │               ├── DoctorDashboard.jsx
+    │               └── DoctorProfile.jsx
     ├── backend/
     │   ├── package-lock.json
     │   ├── package.json
     │   ├── server.js
+    │   ├── .gitignore
     │   ├── config/
     │   │   ├── cloudinary.js
-    │   │   ├── mongodb.js
+    │   │   └── mongodb.js
     │   ├── controllers/
     │   │   ├── adminController.js
     │   │   ├── doctorController.js
-    │   │   ├── userController.js
+    │   │   └── userController.js
     │   ├── middleware/
     │   │   ├── authAdmin.js
     │   │   ├── authDoctor.js
     │   │   ├── authUser.js
+    │   │   └── multer.js
     │   ├── models/
     │   │   ├── appointmentModel.js
     │   │   ├── doctorModel.js
-    │   │   ├── userModel.js
-    │   ├── routes/
+    │   │   └── userModel.js
+    │   └── routes/
     │       ├── adminRoute.js
     │       ├── doctorRoute.js
-    │       ├── userRoute.js
-    ├── frontend/
-    │   ├── README.md
-    │   ├── index.html
-    │   ├── package-lock.json
-    │   ├── package.json
-    │   ├── postcss.config.js
-    │   ├── tailwind.config.js
-    │   ├── vercel.json
-    │   ├── vite.config.js
-    │   ├── .gitignore
-    │   └── src/
-    │       ├── App.jsx
-    │       ├── index.css
-    │       ├── main.jsx
-    │       ├── components/
-    │       │   ├── Navbar.jsx
-    │       │   ├── Footer.jsx
-    │       │   ├── Header.jsx
-    │       ├── pages/
-    │           ├── Home.jsx
-    │           ├── Doctors.jsx
-    │           ├── Appointment.jsx
-    │           ├── MyAppointments.jsx
-    │           ├── MyProfile.jsx
+    │       └── userRoute.js
+    └── frontend/
+        ├── README.md
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── postcss.config.js
+        ├── tailwind.config.js
+        ├── vercel.json
+        ├── vite.config.js
+        ├── .eslintrc.cjs
+        ├── .gitignore
+        └── src/
+            ├── App.jsx
+            ├── index.css
+            ├── main.jsx
+            ├── assets/
+            │   └── assets.js
+            ├── components/
+            │   ├── Banner.jsx
+            │   ├── Footer.jsx
+            │   ├── Header.jsx
+            │   ├── Navbar.jsx
+            │   ├── RelatedDoctors.jsx
+            │   ├── SpecialityMenu.jsx
+            │   └── TopDoctors.jsx
+            ├── context/
+            │   └── AppContext.jsx
+            └── pages/
+                ├── About.jsx
+                ├── Appointment.jsx
+                ├── Contact.jsx
+                ├── Doctors.jsx
+                ├── Home.jsx
+                ├── Login.jsx
+                ├── MyAppointments.jsx
+                └── MyProfile.jsx
 ```
-
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HarshManiar1804/bookmydoctor
+   git clone https://github.com/HarshManiar1804/BookMyDoctor
    ```
 2. Navigate to the project directory:
    ```bash
-   cd harshmaniar1804-bookmydoctor
+   cd BookMyDoctor
    ```
 3. Install dependencies for frontend, backend, and admin panel:
    ```bash
